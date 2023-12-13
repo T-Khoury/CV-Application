@@ -1,8 +1,9 @@
 import { useState } from "react";
 import InputSelection from "./InputSelection";
-import PersonalForm from "./personalForm";
-import WorkForm from "./workForm";
-import EducationForm from "./educationForm";
+import PersonalForm from "./PersonalForm";
+import WorkForm from "./WorkForm";
+import EducationForm from "./EducationForm";
+import SkillsForm from "./SkillForm";
 
 
 export default function InputContainer({ info, setInfo }) {
@@ -17,11 +18,11 @@ export default function InputContainer({ info, setInfo }) {
             case 0:
                 return <PersonalForm info={info} setInfo={setInfo}/>
             case 1:
-                return <EducationForm />
+                return <EducationForm info={info} setInfo={setInfo}/>
             case 2:
-                return <WorkForm />
+                return <WorkForm info={info} setInfo={setInfo}/>
             case 3:
-                return <SkillsForm />
+                return <SkillsForm info={info} setInfo={setInfo}/>
         }
     }
 
