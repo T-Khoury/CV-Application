@@ -4,28 +4,28 @@ import educationIcon from '../assets/education.svg';
 import skillsIcon from '../assets/interests.svg';
 import workIcon from '../assets/work.svg';
 
-export default function InputSelection({ activeIndex, switchIndex }){
+export default function InputSelection({ activeIndex, switchIndex }) {
     return (
         <div className="selection-button-container">
             <button
-                onClick={switchIndex} 
+                onClick={() => switchIndex(0)} 
             >
-                <img src={profileIcon} data-index={0} />
+                <img src={profileIcon} />
             </button>
             <button
-                onClick={switchIndex}
+                onClick={() => switchIndex(1)}
             >
-                <img src={educationIcon} data-index={1} />
+                <img src={educationIcon} />
             </button>
             <button
-                onClick={switchIndex}
+                onClick={() => switchIndex(2)}
             >
-                <img src={workIcon} data-index={2} />
+                <img src={workIcon} />
             </button>
             <button
-                onClick={switchIndex}
+                onClick={() => switchIndex(3)}
             >
-                <img src={skillsIcon} data-index={3} />
+                <img src={skillsIcon} />
             </button>
             <p>{activeIndex}</p>
         </div>

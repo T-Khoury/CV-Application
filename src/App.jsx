@@ -1,19 +1,31 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { defaultResume } from './data'
+import InputContainer from './components/InputContainer';
 
 import './styles/App.css'
 
-function App() {
+export default function App() {
 
-  const [info, setInfo] = useState(defaultResume);
+  const [info, setInfo] = useState(() => {
+    
+    const saved = localStorage.getItem("resumeInfo");
+    const savedInfo = JSON.parse(saved);
+    return savedInfo || defaultResume;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("resumeInfo", JSON.stringify(info))
+  }, [info]) 
 
   return (
     <>
-    <InputForm />
-    <Display />
-      
+      <div className="input-container">
+        <InputContainer info={info} setInfo={setInfo}/>
+      </div>
+      <div className="display-container">
+
+      </div>
     </>
   )
 }
 
-export default App

@@ -7,3 +7,10 @@
   --green-accent: #06d6a0;
   --blue-accent: #118ab2;
 }
+
+.input-container {
+  min-height: 100vh;
+  width: 60%;
+  display: flex;
+  place-items: center;
+}
