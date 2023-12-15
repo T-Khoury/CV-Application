@@ -8,9 +8,32 @@
   --blue-accent: #118ab2;
 }
 
+#root {
+  display: flex;
+}
+
 .input-container {
+  margin: 5rem;
   min-height: 100vh;
-  width: 60%;
+  width: 50%;
   display: flex;
   place-items: center;
+}
+
+.display-container {
+  min-height: 100vh;
+  width: 50%;
+}
+
+.display-page {
+  margin: 5rem;
+}
+
+.degree-and-location {
+  font-style: italic;
+}
+
+.school-and-date, .degree-and-location {
+  display: flex;
+  justify-content: space-between;
 }

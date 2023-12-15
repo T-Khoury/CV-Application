@@ -27,7 +27,6 @@ export default function InputSelection({ activeIndex, switchIndex }) {
             >
                 <img src={skillsIcon} />
             </button>
-            <p>{activeIndex}</p>
         </div>
     )
 }

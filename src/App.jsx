@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { defaultResume } from './data'
 import InputContainer from './components/InputContainer';
+import DisplayContainer from './components/DisplayContainer';
 
 import './styles/App.css'
 
@@ -20,10 +21,10 @@ export default function App() {
   return (
     <>
       <div className="input-container">
-        <InputContainer info={info} setInfo={setInfo}/>
+        <InputContainer info={info} setInfo={setInfo} />
       </div>
       <div className="display-container">
-
+        <DisplayContainer info={info} />
       </div>
     </>
   )

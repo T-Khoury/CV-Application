@@ -77,7 +77,6 @@ export default function PersonalForm({ info, setInfo }) {
                 value={info.personal.summary}
                 onChange={handleSummaryChange}
             />
-            <div>{info.personal.name}</div>
         </>
     )
         
