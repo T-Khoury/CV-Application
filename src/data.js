@@ -11,6 +11,7 @@ export const defaultResume = {
             company: 'Pear',
             title: 'Developer',
             date: '2018-2022',
+            location: 'Raleigh, NC',
             bullet1: 'In ut nisi condimentum, facilisis velit eu, luctus lorem',
             bullet2: 'Proin fermentum leo iaculis, ultrices ante nec, hendrerit mauris',
             bullet3: '',
@@ -20,19 +21,19 @@ export const defaultResume = {
             company: '',
             title: '',
             date: '',
+            location: '',
             bullet1: '',
             bullet2: '',
-            bullet3: '',
-            empty: true
+            bullet3: ''
         },
         {
             company: '',
             title: '',
             date: '',
+            location: '',
             bullet1: '',
             bullet2: '',
-            bullet3: '',
-            empty: true
+            bullet3: ''
         }
     ],
     education: {

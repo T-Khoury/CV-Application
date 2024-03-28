@@ -13,7 +13,8 @@
 }
 
 .input-container {
-  margin: 5rem;
+  box-sizing: border-box;
+  padding: 5rem;
   min-height: 100vh;
   width: 50%;
   display: flex;
@@ -21,19 +22,28 @@
 }
 
 .display-container {
-  min-height: 100vh;
   width: 50%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .display-page {
-  margin: 5rem;
+  margin: 6rem;
+  box-sizing: border-box;
+  max-height: 100vh;
+  aspect-ratio: 8.5 / 11;
 }
 
-.degree-and-location {
+.degree-and-location, .title-and-location {
   font-style: italic;
 }
 
-.school-and-date, .degree-and-location {
+.school-and-date, .company-and-date {
+  font-weight: bold;
+}
+
+.school-and-date, .degree-and-location, .company-and-date, .title-and-location {
   display: flex;
   justify-content: space-between;
 }

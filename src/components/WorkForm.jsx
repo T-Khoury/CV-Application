@@ -54,6 +54,24 @@ function JobInput({ jobIndex, info, setInfo }) {
             work: newWorkArray
         })
     }
+    function handleLocationChange(e) {
+        let workArray = info.work
+        const newWorkArray = info.work.map((job) => {
+            if (job === workArray[jobIndex]) {
+                return {
+                    ...job,
+                    location: e.target.value
+                }
+            } else {
+                return job;
+            }
+        })
+        setInfo({
+            ...info,
+            work: newWorkArray
+        })
+    }
+    
     function handleBullet1Change(e) {
         let workArray = info.work
         const newWorkArray = info.work.map((job) => {
@@ -121,6 +139,11 @@ function JobInput({ jobIndex, info, setInfo }) {
                 label="Job Title"
                 value={info.work[jobIndex].title}
                 onChange={handleTitleChange}
+            />
+            <Input
+                label="Job Location"
+                value={info.work[jobIndex].location}
+                onChange={handleLocationChange}
             />
             <Input
                 label="Bullet 1"
