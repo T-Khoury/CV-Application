@@ -14,6 +14,8 @@ export default function App() {
     return savedInfo || defaultResume;
   });
 
+  console.log(info)
+
   useEffect(() => {
     localStorage.setItem("resumeInfo", JSON.stringify(info))
   }, [info]) 

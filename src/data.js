@@ -43,7 +43,8 @@ export const defaultResume = {
         location: 'Anchorage, AK',
         bullet1: 'Mauris sit amet neque imperdiet, cursus nisl id, blandit risus',
         bullet2: '',
-        bullet3: ''
+        bullet3: '',
+        hidden: false
     },
     other: {
         skills: 'Quisque sodales, nibh et, elementum volutpat',

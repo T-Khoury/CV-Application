@@ -14,7 +14,7 @@ export default function DisplayContainer({ info }) {
                 {info.personal.summary !== '' && <p>{info.personal.summary}</p>}
             </div>
             <hr />
-            <div className="display-education-section">
+            {!info.education.hidden && <div className="display-education-section">
                 <h2>EDUCATION</h2>
                 <hr />
                 <div className="school-and-date">
@@ -30,7 +30,7 @@ export default function DisplayContainer({ info }) {
                     {info.education.bullet2 && <li>{info.education.bullet2}</li>}
                     {info.education.bullet3 && <li>{info.education.bullet3}</li>}
                 </ul>
-            </div>
+            </div>}
             <div className="display-work-section">
                 <h2>WORK EXPERIENCE</h2>
                 <hr />

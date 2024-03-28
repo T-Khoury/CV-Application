@@ -64,6 +64,15 @@ export default function EducationForm({ info, setInfo }) {
             }
         });
     }
+    function handleHiddenToggle() {
+        setInfo({
+            ...info,
+            education: {
+                ...info.education,
+                hidden: !info.education.hidden
+            }
+        });
+    }
     return (
         <>
             <Input
@@ -101,7 +110,7 @@ export default function EducationForm({ info, setInfo }) {
                 value={info.education.bullet3} 
                 onChange={handleBullet3Change}
             />
-
+            <button onClick={handleHiddenToggle}>{info.education.hidden ? 'Show' : 'Hide'}</button>
         </>
     )
 }
