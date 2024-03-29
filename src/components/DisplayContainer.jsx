@@ -18,7 +18,7 @@ export default function DisplayContainer({ info }) {
                 <div className="skills">
                     <h3>SKILLS: </h3><p>{info.other.skills.text}</p>
                 </div>
-                <div className="intersts">
+                <div className="interests">
                     <h3>INTERESTS: </h3><p>{info.other.interests.text}</p>
                 </div>
             </div>)

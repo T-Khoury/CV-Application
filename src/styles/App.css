@@ -8,6 +8,18 @@
   --blue-accent: #118ab2;
 }
 
+h2 {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: .8rem;
+}
+
+p {
+  font-size: .8rem;
+}
+
 #root {
   display: flex;
 }
@@ -29,19 +41,33 @@
 }
 
 .display-page {
-  margin: 6rem;
+  margin: 5rem;
+  padding: 1rem;
   box-sizing: border-box;
   max-height: 100vh;
   aspect-ratio: 8.5 / 11;
   width: 100%;
+  scale: 0.85;
+  position: relative;
+  top: -4rem;
+  left: -2rem;
 }
 
 .display-page ul {
   overflow-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+.display-personal-section {
+  text-align: center;
 }
 
 .degree-and-location, .title-and-location {
   font-style: italic;
+}
+
+.degree-and-location p, .title-and-location p, .skills p, .interests p {
+  margin: 0;
 }
 
 .school-and-date, .company-and-date {
@@ -51,4 +77,28 @@
 .school-and-date, .degree-and-location, .company-and-date, .title-and-location {
   display: flex;
   justify-content: space-between;
+}
+
+.skills, .interests {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skills h3, .interests h3 {
+  margin: .5rem 0;
+}
+
+@media print {
+  .input-container {
+    display: none;
+  }
+  .display-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #root {
+    width: 100%;
+  }
 }
