@@ -6,36 +6,40 @@ export const defaultResume = {
         location: 'Santa Rosa, CA',
         summary: ''
     },
-    work: [
-        {
-            company: 'Pear',
-            title: 'Developer',
-            date: '2018-2022',
-            location: 'Raleigh, NC',
-            bullet1: 'In ut nisi condimentum, facilisis velit eu, luctus lorem',
-            bullet2: 'Proin fermentum leo iaculis, ultrices ante nec, hendrerit mauris',
-            bullet3: '',
-            empty: false
-        },
-        {
-            company: '',
-            title: '',
-            date: '',
-            location: '',
-            bullet1: '',
-            bullet2: '',
-            bullet3: ''
-        },
-        {
-            company: '',
-            title: '',
-            date: '',
-            location: '',
-            bullet1: '',
-            bullet2: '',
-            bullet3: ''
-        }
-    ],
+    work: {
+        jobs: [
+            {
+                company: 'Pear',
+                title: 'Developer',
+                date: '2018-2022',
+                location: 'Raleigh, NC',
+                bullet1: 'In ut nisi condimentum, facilisis velit eu, luctus lorem',
+                bullet2: 'Proin fermentum leo iaculis, ultrices ante nec, hendrerit mauris',
+                bullet3: '',
+                empty: false
+            },
+            {
+                company: '',
+                title: '',
+                date: '',
+                location: '',
+                bullet1: '',
+                bullet2: '',
+                bullet3: ''
+            },
+            {
+                company: '',
+                title: '',
+                date: '',
+                location: '',
+                bullet1: '',
+                bullet2: '',
+                bullet3: ''
+            }
+        ],
+        hidden: false
+        
+    },
     education: {
         school: 'University of Alaska',
         date: '2013-2017',
