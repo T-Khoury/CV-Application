@@ -51,7 +51,13 @@ export const defaultResume = {
         hidden: false
     },
     other: {
-        skills: 'Quisque sodales, nibh et, elementum volutpat',
-        interests: 'Lorem, ipsum dolor, sit amet'
+        skills: {
+            text: 'Quisque sodales, nibh et, elementum volutpat',
+            hidden: false
+        },
+        interests: {
+            text: 'Lorem, ipsum dolor, sit amet',
+            hidden: false
+        } 
     }
 };
