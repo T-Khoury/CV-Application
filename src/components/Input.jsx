@@ -3,11 +3,13 @@ export default function Input({ type, label, value, onChange }) {
         <label>
             {label}
             {' '}
-            <input
-                type={type}
-                value={value}
-                onChange={onChange}
-            />
+            {type === 'textarea' 
+            ? <textarea className="skills-and-interests"></textarea> 
+            : <input
+            type={type}
+            value={value}
+            onChange={onChange}
+            />}
         </label>
     )
 }

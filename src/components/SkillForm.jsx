@@ -22,12 +22,14 @@ export default function SkillsForm({ info, setInfo }) {
     return (
         <>
             <Input
+                type="textarea"
                 label="Skills"
                 value={info.other.skills}
                 onChange={handleSkillsChange}
 
             />
             <Input
+                type="textarea"
                 label="Interests"
                 value={info.other.interests}
                 onChange={handleInterestsChange}
