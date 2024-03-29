@@ -152,7 +152,7 @@ function JobInput({ jobIndex, info, setInfo }) {
                 onChange={handleCompanyChange}
             />
             <Input
-                label="Timeframe"
+                label="Time frame"
                 value={info.work.jobs[jobIndex].date}
                 onChange={handleDateChange}
             />

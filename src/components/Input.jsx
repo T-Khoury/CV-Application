@@ -4,7 +4,11 @@ export default function Input({ type, label, value, onChange }) {
             {label}
             {' '}
             {type === 'textarea' 
-            ? <textarea className="skills-and-interests"></textarea> 
+            ? <textarea 
+            className="skills-and-interests" 
+            value={value} 
+            onChange={onChange}
+            />
             : <input
             type={type}
             value={value}

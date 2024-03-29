@@ -2,6 +2,40 @@ import { useState } from "react";
 
 
 export default function DisplayContainer({ info }) {
+    function renderSkillsInterestsHeader(skillsHidden, interestsHidden) {
+        if (!skillsHidden && !interestsHidden) {
+            return 'SKILLS & INTERESTS'
+        } else if (!skillsHidden && interestsHidden) {
+            return 'SKILLS'
+        } else {
+            return 'INTERESTS'
+        }
+    }
+    function renderSkillsInterestsContent(skillsHidden, interestsHidden) {
+        if (!skillsHidden && !interestsHidden) {
+            return (
+            <div className="skills-interests">
+                <div className="skills">
+                    <h3>SKILLS: </h3><p>{info.other.skills.text}</p>
+                </div>
+                <div className="intersts">
+                    <h3>INTERESTS: </h3><p>{info.other.interests.text}</p>
+                </div>
+            </div>)
+        } else if (!skillsHidden && interestsHidden) {
+            return (
+                <div className="skills-interests">
+                    <p>{info.other.skills.text}</p>
+                </div>
+            )
+        } else {
+            return (
+                <div className="skills-interests">
+                    <p>{info.other.interests.text}</p>
+                </div>
+            )
+        }
+    }
     return (
         <div className="display-page">
             <div className="display-personal-section">
@@ -75,7 +109,11 @@ export default function DisplayContainer({ info }) {
                 </ul>
 
             </div>}
-            <div className="display-skills-section"></div>
+            {(!info.other.skills.hidden || !info.other.interests.hidden) && <div className="display-skills-section">
+                <h2>{renderSkillsInterestsHeader(info.other.skills.hidden, info.other.interests.hidden)}</h2>
+                <hr />
+                {renderSkillsInterestsContent(info.other.skills.hidden, info.other.interests.hidden)}
+            </div>}
         </div>
     )
 }
