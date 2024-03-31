@@ -38,16 +38,16 @@ p {
 }
 
 .display-page {
-  margin: 5rem;
+  margin: 3rem;
   padding: 1rem;
   box-sizing: border-box;
   max-height: 100vh;
   aspect-ratio: 8.5 / 11;
   width: auto;
-  scale: 0.85;
+  /* scale: 0.85;
   position: relative;
   top: -4rem;
-  left: -2rem;
+  left: -2rem; */
 }
 
 .display-page ul {
