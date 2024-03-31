@@ -49,7 +49,7 @@ export default function PersonalForm({ info, setInfo }) {
         });
     }
     return (
-        <>
+        <div className="input-group">
             <Input
                 label="Name" 
                 value={info.personal.name}
@@ -77,7 +77,8 @@ export default function PersonalForm({ info, setInfo }) {
                 value={info.personal.summary}
                 onChange={handleSummaryChange}
             />
-        </>
+        </div>
+            
     )
         
 }

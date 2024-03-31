@@ -34,7 +34,10 @@ export default function InputContainer({ info, setInfo }) {
                 activeIndex={activeIndex}
                 switchIndex={switchIndex}
             />
-            {switchForm(activeIndex)}
+            <div className="input-right">
+                {switchForm(activeIndex)}
+            </div>
+            
             
         </div>
     )

@@ -50,7 +50,7 @@ export default function SkillsForm({ info, setInfo }) {
         });
     }
     return (
-        <>
+        <div className="skills-interests-wrapper">
             <div className="skills-input">
                 <Input
                     type="textarea"
@@ -58,7 +58,7 @@ export default function SkillsForm({ info, setInfo }) {
                     value={info.other.skills.text}
                     onChange={handleSkillsTextChange}
                 />
-                <button onClick={handleSkillsHiddenChange}>{info.other.skills.hidden ? 'Show' : 'Hide'}</button>
+                <button className="hide-section" onClick={handleSkillsHiddenChange}>{info.other.skills.hidden ? 'Show' : 'Hide'}</button>
             </div>
             <div className="interests-input">
                 <Input
@@ -67,8 +67,8 @@ export default function SkillsForm({ info, setInfo }) {
                     value={info.other.interests.text}
                     onChange={handleInterestsTextChange}
                 />
-                <button onClick={handleInterestsHiddenChange}>{info.other.interests.hidden ? 'Show' : 'Hide'}</button>
+                <button className="hide-section" onClick={handleInterestsHiddenChange}>{info.other.interests.hidden ? 'Show' : 'Hide'}</button>
             </div>
-        </>
+        </div>
     )
 }

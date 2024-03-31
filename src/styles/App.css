@@ -16,6 +16,12 @@ h3 {
   font-size: .8rem;
 }
 
+label {
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   font-size: .8rem;
 }
@@ -24,19 +30,10 @@ p {
   display: flex;
 }
 
-.input-container {
-  box-sizing: border-box;
-  padding: 5rem;
-  min-height: 100vh;
-  width: 50%;
-  display: flex;
-  place-items: center;
-}
 
 .display-container {
   width: 50%;
   max-height: 100vh;
-  display: flex;
   justify-content: center;
 }
 
@@ -46,7 +43,7 @@ p {
   box-sizing: border-box;
   max-height: 100vh;
   aspect-ratio: 8.5 / 11;
-  width: 100%;
+  width: auto;
   scale: 0.85;
   position: relative;
   top: -4rem;
@@ -56,6 +53,7 @@ p {
 .display-page ul {
   overflow-wrap: break-word;
   margin: 0.5rem 0;
+  font-size: .8rem;
 }
 
 .display-personal-section {
@@ -70,6 +68,29 @@ p {
   margin: 0;
 }
 
+.input-container {
+  box-sizing: border-box;
+  padding: 5rem 1.5rem;
+  min-height: 100vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.input-group, .job {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.input-form {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+
 .school-and-date, .company-and-date {
   font-weight: bold;
 }
@@ -77,6 +98,12 @@ p {
 .school-and-date, .degree-and-location, .company-and-date, .title-and-location {
   display: flex;
   justify-content: space-between;
+}
+
+.selection-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills, .interests {
@@ -87,6 +114,15 @@ p {
 
 .skills h3, .interests h3 {
   margin: .5rem 0;
+}
+
+.skills-interests-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.skills-input textarea, .interests-input textarea {
+  height: 8rem;
 }
 
 @media print {

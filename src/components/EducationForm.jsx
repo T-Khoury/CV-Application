@@ -75,42 +75,45 @@ export default function EducationForm({ info, setInfo }) {
     }
     return (
         <>
-            <Input
-                label="School Name"
-                value={info.education.school}
-                onChange={handleSchoolChange}
-            />
-            <Input
-                label="Graduation Date"
-                value={info.education.date}
-                onChange={handleDateChange}
-            />
-            <Input
-                label="Degree" 
-                value={info.education.degree}
-                onChange={handleDegreeChange}
-            />
-            <Input
-                label="Location"
-                value={info.education.location}
-                onChange={handleLocationChange}
-            />
-            <Input
-                label="Bullet 1"
-                value={info.education.bullet1}
-                onChange={handleBullet1Change}
-            />
-            <Input
-                label="Bullet 2"
-                value={info.education.bullet2}
-                onChange={handleBullet2Change}
-            />
-            <Input
-                label="Bullet 3"
-                value={info.education.bullet3} 
-                onChange={handleBullet3Change}
-            />
-            <button onClick={handleHiddenToggle}>{info.education.hidden ? 'Show' : 'Hide'}</button>
+            <div className="input-group">
+                <Input
+                    label="School Name"
+                    value={info.education.school}
+                    onChange={handleSchoolChange}
+                />
+                <Input
+                    label="Graduation Date"
+                    value={info.education.date}
+                    onChange={handleDateChange}
+                />
+                <Input
+                    label="Degree" 
+                    value={info.education.degree}
+                    onChange={handleDegreeChange}
+                />
+                <Input
+                    label="Location"
+                    value={info.education.location}
+                    onChange={handleLocationChange}
+                />
+                <Input
+                    label="Bullet 1"
+                    value={info.education.bullet1}
+                    onChange={handleBullet1Change}
+                />
+                <Input
+                    label="Bullet 2"
+                    value={info.education.bullet2}
+                    onChange={handleBullet2Change}
+                />
+                <Input
+                    label="Bullet 3"
+                    value={info.education.bullet3} 
+                    onChange={handleBullet3Change}
+                />
+            </div>
+            <button className="hide-section" onClick={handleHiddenToggle}>{info.education.hidden ? 'Show' : 'Hide'}</button>
         </>
+        
     )
 }
