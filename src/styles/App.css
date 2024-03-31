@@ -40,7 +40,7 @@ p {
 }
 
 .display-page {
-  margin: 3rem;
+  margin: 2rem;
   padding: 1rem;
   box-sizing: border-box;
   max-height: 100vh;
@@ -55,7 +55,10 @@ p {
 .display-page ul {
   overflow-wrap: break-word;
   margin: 0.5rem 0;
-  font-size: .8rem;
+}
+
+.display-page p, .display-page li {
+  font-size: 12px;
 }
 
 .display-personal-section {
