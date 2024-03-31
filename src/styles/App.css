@@ -9,7 +9,7 @@
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 h3 {
@@ -20,6 +20,8 @@ label {
   font-size: .8rem;
   display: flex;
   flex-direction: column;
+  margin: 6px;
+  padding: 2px;
 }
 
 p {
@@ -70,24 +72,34 @@ p {
 
 .input-container {
   box-sizing: border-box;
-  padding: 5rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   min-height: 100vh;
   width: 50%;
   display: flex;
   justify-content: center;
 }
 
+.input-group {
+  gap: 6px;
+}
 
 .input-group, .job {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px;
+  padding: 6px;
 }
+
 
 .input-form {
   width: 100%;
   display: flex;
   gap: 1rem;
+}
+
+.input-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -107,13 +119,12 @@ p {
 }
 
 .skills, .interests {
-  display: flex;
+  display: grid;
   align-items: center;
-  gap: 6px;
 }
 
 .skills h3, .interests h3 {
-  margin: .5rem 0;
+  margin: 6px 0;
 }
 
 .skills-interests-wrapper {

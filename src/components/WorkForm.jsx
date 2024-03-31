@@ -203,9 +203,9 @@ export default function WorkForm({ info, setInfo }){
     return (
         <>
             <JobInput info={info} setInfo={setInfo} jobIndex={0} />
-            <br />
+            <hr />
             <JobInput info={info} setInfo={setInfo} jobIndex={1} />
-            <br />
+            <hr />
             <JobInput info={info} setInfo={setInfo} jobIndex={2} />
             <button className="hide-section" onClick={handleHiddenToggle}>{info.work.hidden ? 'Show' : 'Hide'}</button>
         </>
